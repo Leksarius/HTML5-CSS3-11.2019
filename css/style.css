@@ -17,11 +17,6 @@ body {
     clear: both;
 }
 
-.padding-site {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 /* =========header========= */
 
 .main-header {
@@ -86,11 +81,13 @@ body {
 }
 
 .about-product-txt {
+    margin: 0 0 20 0;
     width: 653px;
     height: 63px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    text-align: justify;
 }
 
 .about-product-photo {
@@ -106,7 +103,6 @@ body {
     padding: 50px;
     box-sizing: border-box;
     background-color: #f5f5f5;
-    margin-bottom: 50px;
 }
 
 .pluses-title {
@@ -115,6 +111,7 @@ body {
     font-size: 30px;
     color: #445161;
     margin-bottom: 29px;
+
 }
 
 .pluses-list {
@@ -148,11 +145,9 @@ body {
 /* =========scrinshots========= */
 
 .scrinshots {
-    height: 487px;
     width: 100%;
     padding: 50px;
     box-sizing: border-box;
-    margin-bottom: 50px;
 }
 
 .scrinshots-title {
@@ -163,17 +158,18 @@ body {
     line-height: 36px;
     color: #445161;
     margin-bottom: 35px;
+    text-transform: capitalize;
 }
 
 .scrinshots-figure-left {
     margin: 0;
-    width: 574px;
+    width: 580px;
     float: left
 }
 
 .scrinshots-figure-right {
     margin: 0;
-    width: 574px;
+    width: 580px;
     float: right
 }
 
@@ -184,6 +180,7 @@ body {
 }
 
 .scrinshots-figure-title {
+    display: block;
     font-size: 24px;
     line-height: 30px;
     color: #445161;
@@ -191,12 +188,281 @@ body {
 }
 
 .scrinshots-figure-txt {
+    margin: 0;
+    padding: 0;
+    width: 580px;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    text-align: justify;
 }
 
 /* =========/scrinshots========= */
+/* =========reviews========= */
+
+.reviews {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.reviews-title {
+    display: block;
+    text-align: center;
+    height: 28px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+.reviews-item-left {
+    margin: 0 32px 24px 0;
+    width: 574px;
+    float: left;
+}
+
+.reviews-item-right {
+    width: 574px;
+    float: right;
+}
+
+.review-photo {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/reviews_img1.png);
+    float: left;
+    margin-right: 26px;
+    box-sizing: border-box;
+}
+
+.reviews-item-txt {
+    margin: 0;
+    padding: 16px;
+    width: 436px;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    background-color: #ebebeb;
+    float: right;
+    border-radius: 5px;
+    position: relative;
+}
+
+.reviews-item-txt:before {
+    content: "";
+    display: block;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;
+}
+
+.review-author {
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #989898;
+    margin-top: 10px;
+}
+
+/* =========/reviews========= */
+/* =========buy========= */
+
+.buy {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.buy-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 28px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+.buy-item {
+    width: 270px;
+    background-color: #445162;
+    border-radius: 5px;
+    padding: 20px 15px 15px 15px;
+}
+
+.buy-item-title {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.buy-item-price {
+    width: 296px;
+    height: 71px;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    vertical-align: middle;
+    color: #445162;
+    background-color: #ffffff;
+    outline: solid 2px #445162;
+    margin-left: -13px;
+    margin-bottom: 15px;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+
+.buy-item-list {
+    margin: 0;
+    padding-left: 20px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.buy-item-list li {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #445161;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+}
+
+.btn:active {
+    background-color: palegreen;
+}
+
+/* =========/buy========= */
+/* =========contacts========= */
+
+.contacts {
+    width: 100%;
+    padding: 50px 50px 50px 250px;
+    box-sizing: border-box;
+    background-color: #445162;
+}
+
+.contacts-title {
+    display: block;
+    height: 28px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: -200px;
+    text-transform: capitalize;
+}
+
+.contacts-form {
+    width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contacts-form-item {
+    width: 500px;
+    height: 40px;
+    background-color: #ffffff;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    padding-left: 10px;
+}
+
+.contacts-form-message {
+    width: 500px;
+    height: 157px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: #445162;
+    padding-left: 10px;
+    padding-top: 13px;
+    margin-bottom: 22px;
+}
+
+.contacts-form-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #445162;
+}
+
+.contacts-form-btn:hover {
+    background-color: lightskyblue;
+}
+
+.contacts-form-btn:active {
+    background-color: palegreen;
+}
+
+/* =========/contacts========= */
+/* =========/main========= */
 
 footer {
     width: 1280px;
@@ -207,185 +473,5 @@ footer {
     letter-spacing: 0.025em;
     color: #445162;
     text-align: center;
-}
-
-/* ========= остальное в работе
-.reviews {
     background-color: #f5f5f5;
-    height: 424px;
 }
-
-img[alt="reviews-image1"] {
-    float: left;
-}
-
-.send {
-    width: 483px;
-    height: 121px;
-    background-image: url(../img/reviews_img2.png);
-    margin-left: 90px;
-    margin-bottom: 24px;
-    margin-right: 32px;
-}
-
-.send-text {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 25px;
-    width: 436px;
-    height: 64px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    font-style: italic;
-    color: #333333;
-}
-
-.send-text2 {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 25px;
-    height: 10px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #989898;
-}
-
-.buy-it {
-    height: 656px;
-    padding-left: 145px;
-    padding-right: 145px;
-}
-
-.standart {
-    background-color: #445162;
-    width: 300px;
-    height: 306px;
-    border-radius: 2%;
-    display: inline-block;
-    margin-right: 41px;
-}
-
-.premium {
-    background-color: #445162;
-    width: 300px;
-    height: 404px;
-    border-radius: 2%;
-    display: inline-block;
-    margin-right: 41px;
-}
-
-.lux {
-    background-color: #445162;
-    width: 300px;
-    height: 499px;
-    border-radius: 2%;
-    display: inline-block;
-}
-
-h3 {
-    font-size: 24px;
-    line-height: 30px;
-    color: #445161;
-    margin-bottom: 5px;
-}
-
-.article-h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #ffffff;
-    padding-top: 15px;
-    text-align: center
-}
-
-.price {
-    width: 296px;
-    height: 54px;
-    background-color: white;
-    border: 2.0px solid #445162;
-    text-align: center;
-    padding-top: 17px;
-    font-size: 40px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #445162;
-    margin-bottom: 12px;
-}
-
-ol li {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #ffffff;
-    padding-left: 20px;
-}
-
-ol {
-    margin-bottom: 15px;
-}
-
-.buy {
-    width: 260px;
-    height: 40px;
-    background-color: #ffffff;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #445161;
-    border: 0;
-    border-radius: 5px;
-    margin-left: 20px;
-}
-
-.contacts {
-    width: 1280px;
-    height: 509px;
-    background-color: #445162;
-}
-
-.contacts-h2 {
-    height: 28px;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 400;
-    color: white;
-    padding-top: 45px;
-    padding-bottom: 35px;
-    text-align: center
-}
-
-.contacts-form {
-    padding-left: 249px;
-}
-
-form input {
-    width: 490px;
-    height: 40px;
-    background-color: #ffffff;
-    margin-bottom: 22px;
-    border-radius: 5px;
-    border: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #445162;
-    padding-left: 10px;
-}
-
-form textarea {
-    width: 490px;
-    height: 157px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #445162;
-    padding-left: 10px;
-    padding-top: 13px;
-}
-
-/* =========/main========= */
