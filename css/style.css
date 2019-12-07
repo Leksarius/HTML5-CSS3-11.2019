@@ -358,6 +358,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
+    outline: none;
     border-radius: 5px;
     background-color: #ffffff;
     word-break: break-all;
@@ -456,6 +457,7 @@ body {
     letter-spacing: normal;
     color: #445162;
     border: 0;
+    outline: none;
 }
 
 .contacts-form-btn:hover {
